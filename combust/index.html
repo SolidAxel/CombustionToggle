@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+/*    .btn-toggle {
+        position: absolute;
+        right: 120px;
+        X coordinate, adjust as needed
+        top: 20px;
+        z-index: 9999;
+    } */
+/* CSS */
+.btn-toggle {
+  background-color: #1cd14a;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: .5;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: fixed;
+  right: 120px;
+  text-align: center;
+  text-decoration: none;
+  top: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  z-index: 9999;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  background-color: #2bb24c;
+}
+
+.btn-toggle:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.btn-toggle:active {
+  background-color: #2bb24c;
+  box-shadow: none;
+}
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>Combustion - Transmission Web Interface</title>
+    <link href="light-theme.css" rel="stylesheet" id="theme-link">>
+</head>
+
+<body>
+    <div id="root"></div>
+    <button class="btn-toggle">Toggle Dark-Mode</button>
+    <script type="text/javascript" src="static/js/main.9c210f2d.js"></script>
+    <script>const btn = document.querySelector(".btn-toggle");
+        const theme = document.querySelector("#theme-link");
+        btn.addEventListener("click", function () {
+            // Swap out the URL for the different stylesheets
+            if (theme.getAttribute("href") == "light-theme.css") {
+                theme.href = "dark-theme.css";
+            } else {
+                theme.href = "light-theme.css";
+            }
+        });</script>
+</body>
+
+</html>
